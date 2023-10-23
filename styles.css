@@ -491,3 +491,148 @@ img {
     padding: 2% 0;
   }
 }
+
+
+/* -------------Cart Page----------------- */
+
+.cart-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 10%;
+  margin: 5%;
+  flex-wrap: wrap;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+}
+
+.cart-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.itembox {
+  background-color: var(--faded-white);
+  display: flex;
+  width: auto;
+  border-radius: 10px;
+  align-items: center;
+  padding: 5%;
+  width: 680px;
+}
+
+.gameimg {
+  width: 35%;
+  padding: 3%;
+}
+
+.itemtext {
+  padding: 2%;
+  width: 200px;
+  color: var(--white);
+  font-weight: thin;
+}
+
+.gametitel {
+  border-bottom: 2px solid var(--white);
+  color: var(--white);
+  width: 200px;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.carttext {
+  margin: 20% 0 50% 15%;
+  color: var(--white);
+}
+
+.summary {
+  width: 540px;
+  height: 500px;
+  border: 1px solid var(--yellow);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.priceinfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  color: var(--white);
+}
+
+h1 {
+  text-align: center;
+  color: var(--white);
+}
+
+.gotopayment {
+  border-radius: 20px;
+  width: 350;
+  height: 80;
+  font-size: 30;
+  background-color: var(--yellow);
+  font-weight: bold;
+}
+.gotopayment:hover {
+  color: var(--white);
+  background-color: var(--faded-white);
+}
+
+.buttonlink {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+
+.choice {
+  display: flex;
+  max-width: 100%;
+  color: var(--white);
+  text-align: center;
+  align-items: center;
+}
+
+.continueshopping {
+  color: var(--white);
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.line {
+  width: 35%; /* Adjust the width as needed */
+  height: 1px; /* Adjust the thickness as needed */
+  background-color: var(--white);
+}
+
+@media screen and (max-width: 872px) {
+  .itembox {
+    width: 350px;
+  }
+  .gametitel {
+    border-bottom: 2px solid var(--white);
+    color: var(--white);
+    width: 200px;
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .summary {
+    width: 400px;
+  }
+  .gotopayment {
+    width: 250px;
+    font-size: 25;
+  }
+}
