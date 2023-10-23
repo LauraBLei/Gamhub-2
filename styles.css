@@ -57,3 +57,69 @@
     cursor: pointer;
     border-radius: 20px;
 }
+
+
+
+                                    /* -------------Games Page----------------- */
+
+.category-container{
+    display: flex;
+    justify-content: center;
+}
+
+.category-box{
+    display: flex;
+    justify-content: center;
+    max-width: 1330px;
+}
+
+.category{
+    padding: 0;
+    margin:2% 0 0;
+    border-radius: 10px;
+    font-family: 'League Spartan', sans-serif; ;
+    font-size:35px;
+
+}
+
+details:not(:last-child) {
+    margin-right: 35px;
+}
+
+
+.categorysummary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--faded-white);
+    cursor: pointer;
+    height: 80px ;
+    width: 402px ;
+    z-index: 3;
+    list-style: none;
+    text-align:center;
+    font-size: 35px;
+    border-radius: 10px;
+    margin: 0;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+.list-container{
+    background-color: var(--grey);
+    position: absolute;
+    z-index: 2;
+    box-shadow: var(--black);
+    border-radius: 10px;
+    position: absolute;
+    width: 402px;
+}
+.gamessum-li{
+    list-style: none;
+    cursor: pointer;
+    list-style: none;
+}
+
+.gamessum-ul {
+    padding: 0 5 ;
+    text-align: center;
+}
