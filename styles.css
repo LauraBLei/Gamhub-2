@@ -1,0 +1,60 @@
+@import url(/Default.css);
+@import url(/Footer.css);
+@import url(/Hover.css);
+@import url(/Media.css);
+@import url(/Header.css);
+@import url(/Gameplacement.css);
+@import url(informationsection.css);
+
+
+                                    /* -------------Home Page----------------- */
+
+.section1 {
+  background: url("Pictures/challenger-stands-front-spooky-castle-illustration.jpg")
+    no-repeat center center fixed;
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+  justify-content: center;
+  display: flex;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+.section1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.jointext {
+    z-index: 2;
+    color: var(--white);
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 45px;
+    font-weight: normal;
+}
+
+.get-the-app {
+    font-family: "League Spartan", sans-serif;
+    font-size: 35px;
+    font-weight: normal;
+    width: 269px;
+    height: 41px;
+    background-color: var(--yellow);
+    color: var(--black);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 20px;
+}
