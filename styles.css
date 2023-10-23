@@ -267,13 +267,13 @@
   padding: 0;
 }
 
-form {
+.contactform {
   display: flex;
   flex-direction: column;
   padding: 6% 0;
 }
 
-input {
+input[type="contacttype"] {
   width: 540px;
   height: 50px;
   border-radius: 10px;
@@ -363,12 +363,11 @@ textarea {
     padding: 0 5%;
   }
 
-  input {
+  input[type="contacttype"] {
     width: 180px;
     height: 25px;
   }
 }
-
 
 /* -------------Boxer game Page----------------- */
 
@@ -491,7 +490,6 @@ img {
     padding: 2% 0;
   }
 }
-
 
 /* -------------Cart Page----------------- */
 
@@ -637,5 +635,171 @@ h1 {
   }
 }
 
-
 /* -------------Payment----------------- */
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+
+.info-section {
+  text-align: center;
+}
+
+.payment-info {
+  display: flex;
+  column-gap: 10%;
+  align-items: center;
+  max-width: 100%;
+}
+
+.cardinformation {
+  width: 680px;
+  height: 400;
+  border: 1px solid var(--yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10%;
+  border-radius: 20px;
+  z-index: 2;
+  background-color: var(--blue);
+}
+input[type="size1"] {
+  width: 120px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: var(--faded-white);
+}
+input[type="size2"] {
+  width: 540px;
+  height: 70px;
+  background-color: var(--faded-white);
+  border-radius: 10px;
+}
+
+input::placeholder {
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 100;
+}
+.summary {
+  width: 540px;
+  height: 450px;
+  border: 1px solid var(--yellow);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buybutton {
+  width: 350px;
+  height: 70px;
+  background-color: var(--yellow);
+  color: var(--black);
+  border-radius: 20px;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 15%;
+  cursor: pointer;
+}
+.priceinfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  color: var(--white);
+}
+
+.summary-container {
+  text-align: center;
+  color: var(--white);
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  column-gap: 2%;
+  margin: 0 0 0 -10%;
+}
+
+.paymentoptions {
+  width: auto;
+  margin-top: -200%;
+}
+.card {
+  border-radius: 10px;
+  border: 1px solid var(--yellow);
+  padding: 10% 20%;
+  width: 100%;
+  z-index: 1;
+  cursor: pointer;
+  margin-bottom: 10%;
+}
+
+.paypal {
+  border-radius: 10px;
+  border: 1px solid var(--yellow);
+  padding: 10% 20%;
+  width: 100%;
+  background-color: var(--faded-white);
+  z-index: 1;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 35;
+}
+@media screen and (max-width: 1657px) {
+  .payment-info {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 872px) {
+  .cardinformation {
+    width: 350px;
+    height: 300;
+  }
+
+  .input[type="size1"] {
+    width: 60px;
+    height: 40px;
+  }
+  input[type="size2"] {
+    width: 250px;
+    height: 40px;
+  }
+
+  input::placeholder {
+    color: var(--white);
+    font-size: 15px;
+  }
+  .summary {
+    width: 350px;
+    height: 350px;
+    margin: 0 0 0 -2%;
+  }
+  h2 {
+    font-size: 30;
+    margin: 20% -70px 0 0;
+  }
+  .buybutton {
+    width: 200px;
+    height: 60px;
+    background-color: var(--yellow);
+    color: var(--black);
+    border-radius: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 5%;
+    cursor: pointer;
+  }
+  .card {
+    font-size: 10;
+  }
+  .paypal {
+    font-size: 10;
+  }
+}

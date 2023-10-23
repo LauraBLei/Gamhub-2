@@ -1,4 +1,5 @@
 
+ 
  .headersection {
     width: 100%;
     height: 200px;
@@ -122,4 +123,5 @@ input[type="checkbox"]:checked~input[type="search"] {
     width: 25%;
     border-radius: 10px;
     font-size: var(--header-font-size);
+    
 }
