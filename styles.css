@@ -337,7 +337,7 @@ textarea {
     padding: 0 5%;
   }
 
-  input {
+  input[type="contacttype"] {
     width: 250px;
     height: 50px;
   }
@@ -415,7 +415,7 @@ textarea {
   cursor: pointer;
 }
 
-.buybutton {
+.buy-button {
   width: 401px;
   height: 105px;
   font-size: 60px;
@@ -439,7 +439,7 @@ textarea {
   background-color: var(--faded-white);
 }
 
-img {
+.boxer-container img {
   border-radius: 20px;
 }
 
@@ -451,20 +451,19 @@ img {
 }
 
 /* This is the responsive coding section  */
-@media screen and (max-width: 1324px) {
-  img {
-    height: 100%;
-    width: 100%;
-  }
-}
+
 
 @media screen and (max-width: 872px) {
+  .boxer-container img {
+    width: 100%;
+    height: auto;
+  }
   .informationbutton {
     width: 400px;
     height: 50;
     font-size: 20px;
   }
-  .buybutton {
+  .buy-button {
     width: 200px;
     height: 60px;
     font-size: 40px;
