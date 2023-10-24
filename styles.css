@@ -361,6 +361,7 @@ textarea {
   }
   .ulinfo {
     padding: 0 5%;
+    width: 300px;
   }
 
   input[type="contacttype"] {
@@ -553,9 +554,14 @@ h3 {
   color: var(--white);
 }
 
-.summary {
+.summary-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.summary-box {
   width: 540px;
-  height: 500px;
+  height: auto;
   border: 1px solid var(--yellow);
   border-radius: 20px;
   display: flex;
@@ -571,9 +577,13 @@ h3 {
   color: var(--white);
 }
 
-h1 {
+h3 {
   text-align: center;
   color: var(--white);
+}
+
+.summary-headline {
+  font-size: 25px;
 }
 
 .gotopayment {
@@ -626,13 +636,15 @@ h1 {
     font-size: 20px;
     font-weight: 200;
   }
-  .summary {
+  .summary-box {
     width: 400px;
+    height: auto;
   }
   .gotopayment {
-    width: 250px;
-    font-size: 25;
-  }
+    width: 200px;
+    font-size: 20;
+    height: 50px;
+}
 }
 
 /* -------------Payment----------------- */
@@ -759,11 +771,11 @@ h2 {
 
 @media screen and (max-width: 872px) {
   .cardinformation {
-    width: 350px;
+    width: 290px;
     height: 300;
   }
 
-  .input[type="size1"] {
+  input[type="size1"] {
     width: 60px;
     height: 40px;
   }
@@ -777,9 +789,9 @@ h2 {
     font-size: 15px;
   }
   .summary {
-    width: 350px;
+    width: 290;
     height: 350px;
-    margin: 0 0 0 -2%;
+    margin: 0 0 0 3%;
   }
   h2 {
     font-size: 30;
@@ -801,5 +813,84 @@ h2 {
   }
   .paypal {
     font-size: 10;
+  }
+}
+
+
+
+/* -------------Payment success----------------- */
+
+
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+
+.checkoutsuccess{
+  display: flex;
+  flex-direction: column;
+  font-size: 37px;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+
+
+
+.download{
+  width: 245px;
+  height: 55;
+  background-color: var(--blue-faded);
+  border: 1px solid var(--white);
+  border-radius: 10px;
+  color: var(--white);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.headtext{
+  border-bottom: 3px solid var(--yellow);
+  padding: 2% 20%;
+  font-size: 45px;
+}
+
+.info-p{
+  text-align: center;
+}
+.iconcheck{
+  padding: 2%;
+  margin: 5% 0;
+}
+
+
+@media screen and (max-width:1324px){
+  .checkoutsuccess{
+      font-size: 35px;
+  }
+  .headtext{
+      font-size: 40px;
+  }
+}
+
+@media screen and (max-width:872px){
+  .checkoutsuccess{
+      font-size: 20px;
+  }
+  .iconcheck{
+      margin: 10% 0;
+  }
+  .headtext{
+      font-size: 25px;
+      padding: 2% 15%;
+  }
+  .info-p{
+      font-size: 20;
+  }
+  .download{
+      width: 200px;
+      height: 50;
+      font-size: 17px;
   }
 }
