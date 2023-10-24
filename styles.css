@@ -433,7 +433,7 @@ textarea {
   justify-content: center;
 }
 
-.buybutton:hover {
+.buy-button:hover {
   background-color: var(--faded-white);
 }
 .cartbutton:hover {
@@ -759,9 +759,7 @@ input::placeholder {
   cursor: pointer;
 }
 
-h2 {
-  font-size: 35;
-}
+
 @media screen and (max-width: 1657px) {
   .payment-info {
     flex-wrap: wrap;
@@ -793,10 +791,7 @@ h2 {
     height: 350px;
     margin: 0 0 0 3%;
   }
-  h2 {
-    font-size: 30;
-    margin: 20% -70px 0 0;
-  }
+  
   .buybutton {
     width: 200px;
     height: 60px;

@@ -16,7 +16,7 @@
   }
   .feature-fast {
     display: flex;
-    width: 402px;
+    width: auto;
     align-items: center;
     gap: 2%;
   }

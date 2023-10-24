@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   color: var(--white);
+  
 }
 
 .view-all {
@@ -28,7 +29,6 @@
 .gamelist {
   margin: 0px 0px 20px;
   display: flex;
-  /* position: relative; */
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 35px;
@@ -56,4 +56,26 @@
 
 .newgames-section{
     margin-bottom: 2%;
+}
+
+@media screen and (max-width: 872px){
+  .picture{
+    width: 100%;
+    height: auto;
+  }
+  .item{
+    
+    max-width: 350px;
+    padding-bottom: 10px;
+  }
+  .pic-information{
+    font-size: 15px;
+  }
+  .maintext{
+    font-size: 25px;
+  }
+
+  .gameboxtitle{
+    font-size: 20px;
+  }
 }

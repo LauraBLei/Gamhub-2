@@ -115,7 +115,7 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked~input[type="search"] {
     transform: translateX(calc(-100% - var(--header-font-size)));
     background-color: var(--yellow);
-    height: 5%;
+    height: auto;
     opacity: 1;
     display: flex;
     position: absolute;
