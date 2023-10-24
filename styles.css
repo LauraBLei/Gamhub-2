@@ -142,9 +142,9 @@
   .list-container {
     font-size: 15px;
     width: 100px;
-    top: 25%;
+    top: 205px;
     text-align: left;
-    margin-top: 30px;
+    position: absolute;
   }
 }
 
