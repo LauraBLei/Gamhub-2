@@ -2,7 +2,7 @@
 @import url(/_Footer.css);
 @import url(/_Header.css);
 @import url(/_Gameplacement.css);
-@import url(_informationsection.css);
+@import url(/_informationsection.css);
 @import url(/_Hover.css);
 @import url(/_Media.css);
 
@@ -142,9 +142,9 @@
   .list-container {
     font-size: 15px;
     width: 100px;
-    top: 25%;
+    top: 205px;
     text-align: left;
-    margin-top: 30px;
+    position: absolute;
   }
 }
 
@@ -267,13 +267,13 @@
   padding: 0;
 }
 
-form {
+.contactform {
   display: flex;
   flex-direction: column;
   padding: 6% 0;
 }
 
-input {
+input[type="contacttype"] {
   width: 540px;
   height: 50px;
   border-radius: 10px;
@@ -337,7 +337,7 @@ textarea {
     padding: 0 5%;
   }
 
-  input {
+  input[type="contacttype"] {
     width: 250px;
     height: 50px;
   }
@@ -361,14 +361,14 @@ textarea {
   }
   .ulinfo {
     padding: 0 5%;
+    width: 300px;
   }
 
-  input {
+  input[type="contacttype"] {
     width: 180px;
     height: 25px;
   }
 }
-
 
 /* -------------Boxer game Page----------------- */
 
@@ -416,7 +416,7 @@ textarea {
   cursor: pointer;
 }
 
-.buybutton {
+.buy-button {
   width: 401px;
   height: 105px;
   font-size: 60px;
@@ -433,14 +433,14 @@ textarea {
   justify-content: center;
 }
 
-.buybutton:hover {
+.buy-button:hover {
   background-color: var(--faded-white);
 }
 .cartbutton:hover {
   background-color: var(--faded-white);
 }
 
-img {
+.boxer-container img {
   border-radius: 20px;
 }
 
@@ -452,20 +452,19 @@ img {
 }
 
 /* This is the responsive coding section  */
-@media screen and (max-width: 1324px) {
-  img {
-    height: 100%;
-    width: 100%;
-  }
-}
+
 
 @media screen and (max-width: 872px) {
+  .boxer-container img {
+    width: 100%;
+    height: auto;
+  }
   .informationbutton {
     width: 400px;
     height: 50;
     font-size: 20px;
   }
-  .buybutton {
+  .buy-button {
     width: 200px;
     height: 60px;
     font-size: 40px;
@@ -491,7 +490,6 @@ img {
     padding: 2% 0;
   }
 }
-
 
 /* -------------Cart Page----------------- */
 
@@ -545,6 +543,7 @@ img {
   font-weight: 200;
 }
 
+
 h3 {
   font-size: 20px;
   font-weight: 100;
@@ -555,9 +554,14 @@ h3 {
   color: var(--white);
 }
 
-.summary {
+.summary-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.summary-box {
   width: 540px;
-  height: 500px;
+  height: auto;
   border: 1px solid var(--yellow);
   border-radius: 20px;
   display: flex;
@@ -573,9 +577,13 @@ h3 {
   color: var(--white);
 }
 
-h1 {
+h3 {
   text-align: center;
   color: var(--white);
+}
+
+.summary-headline {
+  font-size: 25px;
 }
 
 .gotopayment {
@@ -628,14 +636,256 @@ h1 {
     font-size: 20px;
     font-weight: 200;
   }
-  .summary {
+  .summary-box {
     width: 400px;
+    height: auto;
   }
   .gotopayment {
+    width: 200px;
+    font-size: 20;
+    height: 50px;
+}
+}
+
+/* -------------Payment----------------- */
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+
+.info-section {
+  text-align: center;
+}
+
+.payment-info {
+  display: flex;
+  column-gap: 10%;
+  align-items: center;
+  max-width: 100%;
+}
+
+.cardinformation {
+  width: 680px;
+  height: 400;
+  border: 1px solid var(--yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10%;
+  border-radius: 20px;
+  z-index: 2;
+  background-color: var(--blue);
+}
+input[type="size1"] {
+  width: 120px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: var(--faded-white);
+}
+input[type="size2"] {
+  width: 540px;
+  height: 70px;
+  background-color: var(--faded-white);
+  border-radius: 10px;
+}
+
+input::placeholder {
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 100;
+}
+.summary {
+  width: 540px;
+  height: 450px;
+  border: 1px solid var(--yellow);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buybutton {
+  width: 350px;
+  height: 70px;
+  background-color: var(--yellow);
+  color: var(--black);
+  border-radius: 20px;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 15%;
+  cursor: pointer;
+}
+.priceinfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  color: var(--white);
+}
+
+.summary-container {
+  text-align: center;
+  color: var(--white);
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  column-gap: 2%;
+  margin: 0 0 0 -10%;
+}
+
+.paymentoptions {
+  width: auto;
+  margin-top: -200%;
+}
+.card {
+  border-radius: 10px;
+  border: 1px solid var(--yellow);
+  padding: 10% 20%;
+  width: 100%;
+  z-index: 1;
+  cursor: pointer;
+  margin-bottom: 10%;
+}
+
+.paypal {
+  border-radius: 10px;
+  border: 1px solid var(--yellow);
+  padding: 10% 20%;
+  width: 100%;
+  background-color: var(--faded-white);
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 1657px) {
+  .payment-info {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 872px) {
+  .cardinformation {
+    width: 290px;
+    height: 300;
+  }
+
+  input[type="size1"] {
+    width: 60px;
+    height: 40px;
+  }
+  input[type="size2"] {
     width: 250px;
-    font-size: 25;
+    height: 40px;
+  }
+
+  input::placeholder {
+    color: var(--white);
+    font-size: 15px;
+  }
+  .summary {
+    width: 290;
+    height: 350px;
+    margin: 0 0 0 3%;
+  }
+  
+  .buybutton {
+    width: 200px;
+    height: 60px;
+    background-color: var(--yellow);
+    color: var(--black);
+    border-radius: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 5%;
+    cursor: pointer;
+  }
+  .card {
+    font-size: 10;
+  }
+  .paypal {
+    font-size: 10;
   }
 }
 
 
-/* -------------Payment----------------- */
+
+/* -------------Payment success----------------- */
+
+
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+
+.checkoutsuccess{
+  display: flex;
+  flex-direction: column;
+  font-size: 37px;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+
+
+
+.download{
+  width: 245px;
+  height: 55;
+  background-color: var(--blue-faded);
+  border: 1px solid var(--white);
+  border-radius: 10px;
+  color: var(--white);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.headtext{
+  border-bottom: 3px solid var(--yellow);
+  padding: 2% 20%;
+  font-size: 45px;
+}
+
+.info-p{
+  text-align: center;
+}
+.iconcheck{
+  padding: 2%;
+  margin: 5% 0;
+}
+
+
+@media screen and (max-width:1324px){
+  .checkoutsuccess{
+      font-size: 35px;
+  }
+  .headtext{
+      font-size: 40px;
+  }
+}
+
+@media screen and (max-width:872px){
+  .checkoutsuccess{
+      font-size: 20px;
+  }
+  .iconcheck{
+      margin: 10% 0;
+  }
+  .headtext{
+      font-size: 25px;
+      padding: 2% 15%;
+  }
+  .info-p{
+      font-size: 20;
+  }
+  .download{
+      width: 200px;
+      height: 50;
+      font-size: 17px;
+  }
+}

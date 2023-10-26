@@ -28,8 +28,7 @@
       z-index: 2;
     }
     input[type="checkbox"]:checked~input[type="search"] { 
-        left: 25%;
-        width: 45%;
+        width: 545px;
         
     }
     .section1 {
@@ -86,20 +85,18 @@
     }
 
     input[type="checkbox"]:checked~input[type="search"] { 
-        top:7%;
-        left: 25%;
-        width: 30%;
-        height: 20px;
+        width: 125px;
+        font-size: 20px;
     }
 
     .search-button{
         font-size: 15px;
     }
     .icon{
-        font-size: 5px;
+        font-size: 4px;
     }
-    .maintext{
-        font-size: 15px;
+    .footer-maintext{
+        font-size: 10px;
     }
     .Joinp{
         font-size: 32px;
@@ -110,36 +107,3 @@
   }
 
 
-
-                        /* -------------Games Page----------------- */
-
-@media screen and (max-width:1324px){
-    .categorysummary{
-        height: 50px ;
-        width: 200px ;
-    }
-
-    .list-container{
-        font-size: 20px;
-        width: 200px;
-        top:25%;
-    }
-}
-
-@media screen and (max-width:872px){
-    .categorysummary{
-        height: 40px ;
-        width: 100px ;
-        font-size: 20px;
-    }
-
-    .list-container{
-        font-size: 15px;
-        width: 100px;
-        top:25%;
-        text-align: left;
-        
-    }
-        
-
-}
