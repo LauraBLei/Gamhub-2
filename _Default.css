@@ -16,3 +16,10 @@
     padding: 0;
   }
   
+  h1{
+    margin-left: 25px;
+    margin-bottom: 50px;
+    padding: 0;
+    color: var(--white);
+    white-space: nowrap;
+  }

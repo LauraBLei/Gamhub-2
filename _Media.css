@@ -28,8 +28,7 @@
       z-index: 2;
     }
     input[type="checkbox"]:checked~input[type="search"] { 
-        left: 25%;
-        width: 45%;
+        width: 545px;
         
     }
     .section1 {
@@ -86,10 +85,8 @@
     }
 
     input[type="checkbox"]:checked~input[type="search"] { 
-        top:7%;
-        left: 25%;
-        width: 30%;
-        height: 20px;
+        width: 125px;
+        font-size: 20px;
     }
 
     .search-button{

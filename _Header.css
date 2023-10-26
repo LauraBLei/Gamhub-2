@@ -112,16 +112,14 @@ input[type="checkbox"] {
     display: none;
 }
 
-input[type="checkbox"]:checked~input[type="search"] {
-    transform: translateX(calc(-100% - var(--header-font-size)));
-    background-color: var(--yellow);
-    height: auto;
-    opacity: 1;
-    display: flex;
-    position: absolute;
-    left: 35%;
-    width: 25%;
-    border-radius: 10px;
-    font-size: var(--header-font-size);
-    
+
+input[type="checkbox"]:checked ~ input[type="search"] {
+  transform: translateX(calc(-100% - 1rem));
+  background-color: var(--yellow);
+  opacity: 1;
+  display: flex;
+  position: absolute;
+  width: 600px;
+  border-radius: 10px;
+  font-size: var(--header-font-size);
 }
