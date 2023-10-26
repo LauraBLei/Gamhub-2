@@ -103,7 +103,6 @@
   z-index: 2;
   box-shadow: var(--black);
   border-radius: 10px;
-  position: absolute;
   width: 402px;
   margin-top: 10px;
 }
@@ -127,8 +126,6 @@
   .list-container {
     font-size: 20px;
     width: 200px;
-    top: 25%;
-    margin-top: 50px;
   }
 }
 
@@ -142,9 +139,6 @@
   .list-container {
     font-size: 15px;
     width: 100px;
-    top: 205px;
-    text-align: left;
-    position: absolute;
   }
 }
 
