@@ -145,7 +145,7 @@
 /* -------------About us Page----------------- */
 .aboutus {
   position: relative; /* Add this to establish a positioning context */
-  background: url("/Pictures/jason-goodman-bzqU01v-G54-unsplash.jpg") no-repeat
+  background: url("Pictures/jason-goodman-bzqU01v-G54-unsplash.jpg") no-repeat
     center center fixed;
   width: 100%;
   height: 100%;
