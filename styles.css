@@ -676,6 +676,7 @@ input[type="size1"] {
   height: 70px;
   border-radius: 10px;
   background-color: var(--faded-white);
+  font-size: 20px;
 }
 input[type="size2"] {
   width: 540px;
