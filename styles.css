@@ -1,10 +1,10 @@
 @import url(css/default.css);
-@import url(footer.css);
-@import url(header.css);
-@import url(gameplacement.css);
-@import url(informationsection.css);
-@import url(hover.css);
-@import url(media.css);
+@import url(css/footer.css);
+@import url(css/header.css);
+@import url(css/gameplacement.css);
+@import url(css/informationsection.css);
+@import url(css/hover.css);
+@import url(css/media.css);
 
 /* -------------Home Page----------------- */
 
