@@ -682,6 +682,7 @@ input[type="size2"] {
   height: 70px;
   background-color: var(--faded-white);
   border-radius: 10px;
+  font-size: 20px;
 }
 
 input::placeholder {
