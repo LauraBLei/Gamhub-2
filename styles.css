@@ -755,6 +755,9 @@ input::placeholder {
   cursor: pointer;
 }
 
+.aboutus-h1{
+  margin-left: 0;
+}
 
 @media screen and (max-width: 1657px) {
   .payment-info {
@@ -804,6 +807,10 @@ input::placeholder {
   }
   .paypal {
     font-size: 10;
+  }
+  .aboutus-text{
+    font-size: 25px;
+    text-align: center;
   }
 }
 

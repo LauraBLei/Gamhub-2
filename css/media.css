@@ -55,6 +55,11 @@
       .Joinp{
         font-size: 35px;
       }
+
+      .headersection{
+        height: auto;
+        padding-bottom: 2%;
+      }
 }
   
   @media screen and (max-width: 872px) {
