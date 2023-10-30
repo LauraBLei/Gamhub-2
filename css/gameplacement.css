@@ -58,6 +58,9 @@
     margin-bottom: 2%;
 }
 
+.item{
+  padding-bottom: 40px;
+}
 @media screen and (max-width: 872px){
   .picture{
     width: 100%;
