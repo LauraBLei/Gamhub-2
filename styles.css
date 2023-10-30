@@ -113,7 +113,7 @@
 }
 
 .gamessum-ul {
-  padding: 0 5;
+  padding: 0 5px;
   text-align: center;
 }
 
@@ -380,26 +380,62 @@ textarea {
   margin: 2%;
   display: flex;
   flex-wrap: wrap;
-  max-width: 685;
+  max-width: 685px;
   display: flex;
   justify-content: center;
 }
 
 .informationbutton {
-  width: 683px;
-  height: 105;
+  width: 685px;
+  height: 105px;
   font-size: 45px;
   border-radius: 10px;
   border-color: var(--yellow);
   background-color: var(--faded-white);
   margin: 1%;
   cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .informationbutton:hover {
   background-color: var(--faded-white20);
 }
 
+.info-box{
+  background-color: var(--grey);
+  color: var(--black);
+  list-style: none;
+  padding: 0;
+  margin-left: 9px;
+  width: 671px;
+  padding: 10px 5px 10px 5px;
+  font-size: 25px;
+  border-radius: 10px;
+  outline: 2px solid var(--blue);
+  margin-top: 0;
+}
+
+.gamepage-details{
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+.category-buttons{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.category-button{
+  cursor: pointer;
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
 .cartbutton {
   width: 261px;
   height: 105;
