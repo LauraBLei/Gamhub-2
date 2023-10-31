@@ -9,8 +9,8 @@
 /* -------------Home Page----------------- */
 
 .section1 {
-  background: url("Pictures/challenger-stands-front-spooky-castle-illustration.jpg")
-    no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("/Gamhub-2/Pictures/challenger-stands-front-spooky-castle-illustration.jpg");
   width: 100%;
   height: 800px;
   background-size: cover;
@@ -18,19 +18,6 @@
   display: flex;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  position: relative;
-  z-index: 1;
-}
-
-.section1::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
 }
 
 .jointext {
@@ -58,6 +45,16 @@
   border-radius: 20px;
 }
 
+@media screen and (max-width: 872px) {
+  .jointext{
+    font-size: 25px;
+  }
+.get-the-app{
+  width: 200px;
+  height: auto;
+  font-size: 25px;
+}
+}
 /* -------------Games Page----------------- */
 
 .category-container {

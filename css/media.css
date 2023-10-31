@@ -44,17 +44,6 @@
         position: relative;
         z-index: 1;
       }
-      .jointext {
-        z-index: 2;
-        color: var(--white);
-        position: absolute;
-        top: 15%;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-      .Joinp{
-        font-size: 35px;
-      }
 
       .headersection{
         height: auto;
@@ -93,7 +82,7 @@
         width: 125px;
         font-size: 20px;
     }
-
+    
     .search-button{
         font-size: 15px;
     }
@@ -103,9 +92,7 @@
     .footer-maintext{
         font-size: 10px;
     }
-    .Joinp{
-        font-size: 32px;
-      }
+    
       .footer-container {
         column-gap: 50px;
       }
