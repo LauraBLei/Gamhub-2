@@ -15,6 +15,7 @@
   border-radius: 10px;
   border-color: var(--white);
   color: var(--white);
+  cursor: pointer;
 }
 
 .game-container {
