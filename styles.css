@@ -747,6 +747,12 @@ input::placeholder {
   margin: 15%;
   cursor: pointer;
 }
+
+.buybutton:hover{
+  background-color: var(--faded-white);
+  color: var(--yellow);
+  outline: 1px solid var(--yellow);
+}
 .priceinfo {
   display: flex;
   justify-content: space-between;
