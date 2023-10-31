@@ -620,6 +620,7 @@ h3 {
   font-size: 30px;
   background-color: var(--yellow);
   font-weight: bold;
+  cursor: pointer;
 }
 .gotopayment:hover {
   color: var(--white);
