@@ -61,8 +61,8 @@
     }
     .right-navbar {
       font-size: 5px;
-      gap: 5%;
-      right: 5%;
+      gap: 30%;
+      right: 10%;
     }
     
     .menu a {
